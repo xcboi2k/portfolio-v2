@@ -38,15 +38,15 @@ const ProjectCard = ({ logo, name, techStacks, description, websiteLink, downloa
                     <div className="m-5">
                     {websiteLink ? (
                         <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4 ">
-                            <div className="flex items-center">
-                                <LinkArrow className="h-4 w-4 mr-2"/>
+                            <div className="flex items-center w-30">
+                                <LinkArrow className="h-5 w-5 mr-2"/>
                                 <span className="text-lg">Visit Website</span>
                             </div>
                         </a>
                     ) : downloadLink ? (
                         <a href={downloadLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4 ">
-                            <div className="flex items-center">
-                                <LinkArrow className="mr-2"/>
+                            <div className="flex items-center w-30">
+                                <LinkArrow className="w-5 h-5 mr-2"/>
                                 <span className="text-lg">Click to Download</span>
                             </div>
                         </a>
