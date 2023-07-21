@@ -5,6 +5,7 @@ import SectionTitle from '@/components/SectionTitle'
 import PageTitle from '@/components/PageTitle'
 import ProjectsGameDev from '@/components/ProjectsGameDev'
 import ProjectsMobDev from '@/components/ProjectsMobDev'
+import Link from 'next/link'
 
 const projects = () => {
     return (
@@ -22,6 +23,13 @@ const projects = () => {
                     <div className='mb-5'>
                         <SectionTitle title='Mobile App Development'/>
                         <ProjectsMobDev />
+                    </div>
+                    <div className='mb-5 flex items-center justify-center'>
+                        <Link href='/otherProjects'>
+                            <button className="bg-[#b54ed7] hover:bg-blue-700 text-[#28283c] font-bold py-2 px-4 mt-4 rounded">
+                                Other Projects
+                            </button>
+                        </Link>
                     </div>
                 </Layout>
             </main>
