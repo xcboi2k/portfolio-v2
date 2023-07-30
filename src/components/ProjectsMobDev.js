@@ -31,6 +31,8 @@ const ProjectsMobDev = () => {
                 experience as you explore a vast collection of pictures, uncover fascinating details, and embrace the power of knowledge 
                 in the palm of your hand.'
                 carouselImages={[swccPreview1, swccPreview2, swccPreview3]}
+                youtubeLink="https://youtu.be/cw7Us9c88Zo"
+                downloadLink="https://drive.google.com/file/d/1vafzfTJTg1qke7Z0eU_X3O6EFUHQrgrb/view?usp=sharing"
             />
             <ProjectCard 
                 logo={collectorPlusIcon}
@@ -40,6 +42,7 @@ const ProjectsMobDev = () => {
                 track, organize, and explore your collections, while keeping your wishlist in check and unlocking the full potential of your 
                 treasures.'
                 carouselImages={[collectorPlusPreview1, collectorPlusPreview2, collectorPlusPreview3]}
+                youtubeLink="https://youtu.be/100qdb90WeE"
             />
             <ProjectCard 
                 logo={fitraIcon}
@@ -48,6 +51,8 @@ const ProjectsMobDev = () => {
                 description='A software that aims to provide a cashflow monitoring system that could potentially improve the financial literacy 
                 of the user and enhance financial awareness through habit tracking. '
                 carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
+                youtubeLink="https://youtu.be/KYF2mFFrB5U"
+                downloadLink="https://drive.google.com/file/d/1GGNhb9jVgGuZ2CI3Fwe54V5Tce69D5_Y/view?usp=sharing"
             />
             <ProjectCard 
                 logo={lockIcon}

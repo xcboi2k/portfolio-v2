@@ -35,7 +35,7 @@ const ProjectCard = ({ logo, name, techStacks, description, websiteLink, downloa
                 <div className='m-4'>
                     <h2 className="text-4xl font-bold m-4 text-[#101130] text-center">{name}</h2>
                     <p className="text-[#28283c] m-4 text-left">{description}</p>
-                    <div className="m-5">
+                    <div className="m-5 flex items-center justify-center">
                     {websiteLink ? (
                         <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="mr-4">
                             <div className="flex items-center w-30">
@@ -58,9 +58,12 @@ const ProjectCard = ({ logo, name, techStacks, description, websiteLink, downloa
                         null
                     )}
                     {youtubeLink && (
-                        <a href={youtubeLink} target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-700">
-                            <YoutubeIcon />
-                            View Demo
+                        <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
+                            <div className="flex items-center w-30">
+                                <button className="bg-[#b54ed7] hover:bg-blue-700 text-[#28283c] font-bold py-2 px-4 mt-4 rounded">
+                                    Watch Demo
+                                </button>
+                            </div>
                         </a>
                     )}
                     </div>
