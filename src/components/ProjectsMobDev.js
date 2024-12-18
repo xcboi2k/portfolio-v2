@@ -25,7 +25,7 @@ const ProjectsMobDev = () => {
             <ProjectCard 
                 logo={swccIcon}
                 name='Star Wars Collectibles Companion'
-                techStacks={['React Native', 'Firebase']}
+                techStacks={['React Native', 'Expo', 'Firebase']}
                 description='Unleash the Force with SWCC, the ultimate mobile guide for Star Wars action figure collectors, offering a captivating 
                 experience as you explore a vast collection of pictures, uncover fascinating details, and embrace the power of knowledge 
                 in the palm of your hand.'
@@ -36,7 +36,7 @@ const ProjectsMobDev = () => {
             <ProjectCard 
                 logo={collectorPlusIcon}
                 name='Collector Plus'
-                techStacks={['React Native', 'Firebase']}
+                techStacks={['React Native', 'Expo', 'Firebase']}
                 description='Elevate your collecting experience with CollectorPlus, the essential mobile app that allows you to effortlessly 
                 track, organize, and explore your collections, while keeping your wishlist in check and unlocking the full potential of your 
                 treasures.'
@@ -46,7 +46,7 @@ const ProjectsMobDev = () => {
             <ProjectCard 
                 logo={fitraIcon}
                 name='FiTra'
-                techStacks={['React Native', 'Firebase']}
+                techStacks={['React Native', 'Expo', 'Firebase']}
                 description='A software that aims to provide a cashflow monitoring system that could potentially improve the financial literacy 
                 of the user and enhance financial awareness through habit tracking.'
                 carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}

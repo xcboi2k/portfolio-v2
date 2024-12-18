@@ -16,18 +16,18 @@ const projects = () => {
             <main className="w-full flex flex-col items-center justify-center">
                 <Layout className="pt-6">
                     <PageTitle title="My Projects" />
-                    
-                    <div className="mb-5 w-full">
-                        <SectionTitle title="Game Development" />
-                        <div className="w-full">
-                            <ProjectsGameDev />
-                        </div>
-                    </div>
 
                     <div className="mb-5 w-full">
                         <SectionTitle title="Mobile App Development" />
                         <div className="w-full">
                             <ProjectsMobDev />
+                        </div>
+                    </div>
+                    
+                    <div className="mb-5 w-full">
+                        <SectionTitle title="Game Development" />
+                        <div className="w-full">
+                            <ProjectsGameDev />
                         </div>
                     </div>
 
