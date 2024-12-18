@@ -21,13 +21,12 @@ import swccPreview3 from '../../public/images/projects/swcc/preview3.png'
 
 const ProjectsMobDev = () => {
     return (
-        <div className='mb-2 flex flex-wrap justify-center'>
+        <div className="mb-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ProjectCard 
                 logo={swccIcon}
                 name='Star Wars Collectibles Companion'
                 techStacks={['React Native', 'Firebase']}
-                description='
-                Unleash the Force with SWCC, the ultimate mobile guide for Star Wars action figure collectors, offering a captivating 
+                description='Unleash the Force with SWCC, the ultimate mobile guide for Star Wars action figure collectors, offering a captivating 
                 experience as you explore a vast collection of pictures, uncover fascinating details, and embrace the power of knowledge 
                 in the palm of your hand.'
                 carouselImages={[swccPreview1, swccPreview2, swccPreview3]}
@@ -49,7 +48,7 @@ const ProjectsMobDev = () => {
                 name='FiTra'
                 techStacks={['React Native', 'Firebase']}
                 description='A software that aims to provide a cashflow monitoring system that could potentially improve the financial literacy 
-                of the user and enhance financial awareness through habit tracking. '
+                of the user and enhance financial awareness through habit tracking.'
                 carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
                 youtubeLink="https://youtu.be/KYF2mFFrB5U"
                 downloadLink="https://drive.google.com/file/d/1GGNhb9jVgGuZ2CI3Fwe54V5Tce69D5_Y/view?usp=sharing"
@@ -58,9 +57,8 @@ const ProjectsMobDev = () => {
                 logo={lockIcon}
                 name='Coming Soon'
                 techStacks={['React Native', 'MongoDB']}
-                // description='Embark on an exhilarating journey through City Adventures, the immersive 3D adventure game that blends 
-                //     excitement with real-world lessons in traffic safety and awareness, challenging players to collect coins while adhering 
-                //     to traffic rules and regulations, offering various player modes and an opportunity to become a responsible virtual citizen.'
+                // Uncomment and edit if you want to add description or links
+                // description='Embark on an exhilarating journey through City Adventures, the immersive 3D adventure game that blends excitement with real-world lessons in traffic safety and awareness...'
                 // websiteLink='https://drive.google.com/file/d/1QKxo_KJaKsSaSPsHWqdvsHZeSvHSRKSI/view?usp=sharing'
                 // carouselImages={[cityAdventuresPreview1, cityAdventuresPreview2]}
             />

@@ -23,14 +23,14 @@ import cityAdventuresPreview2 from '../../public/images/projects/city-adventures
 
 const ProjectsGameDev = () => {
     return (
-        <div className='mb-2 flex flex-wrap justify-center'>
+        <div className="mb-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ProjectCard 
                 logo={razorSquadronIcon}
                 name='Razor Squadron'
                 techStacks={['Unity']}
                 description='Embark on an adrenaline-fueled journey with Razor Squadron, the ultimate 2D shooting game that pushes 
-                    your skills to the limit, offering a captivating single level, diverse ship selection, and heart-pounding action to 
-                    become a legendary aerial warrior.'
+                            your skills to the limit, offering a captivating single level, diverse ship selection, and heart-pounding action to 
+                            become a legendary aerial warrior.'
                 websiteLink='https://xcboi2k.itch.io/razor-squadron'
                 carouselImages={[razorSquadronPreview1, razorSquadronPreview2, razorSquadronPreview3]}
             />
@@ -48,8 +48,8 @@ const ProjectsGameDev = () => {
                 name='Infectomatron'
                 techStacks={['Unity']}
                 description='Gear up and conquer the ever-evolving world of Infectomatron, the explosive top-down 2D shooting game 
-                    that pushes your skills to the limits with intense battles, precise attacks, thrilling game modes, and a chance to 
-                    dominate the leaderboards as the ultimate shooting game champion.'
+                            that pushes your skills to the limits with intense battles, precise attacks, thrilling game modes, and a chance to 
+                            dominate the leaderboards as the ultimate shooting game champion.'
                 websiteLink='https://xcboi2k.itch.io/infectomatron'
                 carouselImages={[infectomatronPreview1, infectomatronPreview2, infectomatronPreview3]}
             />
@@ -58,8 +58,8 @@ const ProjectsGameDev = () => {
                 name='City Adventures'
                 techStacks={['Unity']}
                 description='Embark on an exhilarating journey through City Adventures, the immersive 3D adventure game that blends 
-                    excitement with real-world lessons in traffic safety and awareness, challenging players to collect coins while adhering 
-                    to traffic rules and regulations, offering various player modes and an opportunity to become a responsible virtual citizen.'
+                            excitement with real-world lessons in traffic safety and awareness, challenging players to collect coins while adhering 
+                            to traffic rules and regulations, offering various player modes and an opportunity to become a responsible virtual citizen.'
                 downloadLink='https://drive.google.com/file/d/1QKxo_KJaKsSaSPsHWqdvsHZeSvHSRKSI/view?usp=sharing'
                 carouselImages={[cityAdventuresPreview1, cityAdventuresPreview2]}
             />

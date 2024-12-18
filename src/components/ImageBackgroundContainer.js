@@ -8,7 +8,7 @@ const ImageBackgroundContainer = ({ children, imageUrl }) => {
         backgroundPosition: 'center',
     };
 
-    return <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center" style={containerStyle}>{children}</div>;
+    return <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center sm:bg-contain md:bg-cover" style={containerStyle}>{children}</div>;
 }
 
 export default ImageBackgroundContainer
