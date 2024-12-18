@@ -13,20 +13,27 @@ const projects = () => {
             <Head>
                 <title>AG Portfolio | Projects Page</title>
             </Head>
-            <main className='w-full flex flex-col items-center justify-center'>
-                <Layout className='pt-6'>
-                    <PageTitle title='My Projects'/>
-                    <div className='mb-5'>
-                        <SectionTitle title='Game Development'/>
-                        <ProjectsGameDev />
+            <main className="w-full flex flex-col items-center justify-center">
+                <Layout className="pt-6">
+                    <PageTitle title="My Projects" />
+
+                    <div className="mb-5 w-full">
+                        <SectionTitle title="Mobile App Development" />
+                        <div className="w-full">
+                            <ProjectsMobDev />
+                        </div>
                     </div>
-                    <div className='mb-5'>
-                        <SectionTitle title='Mobile App Development'/>
-                        <ProjectsMobDev />
+                    
+                    <div className="mb-5 w-full">
+                        <SectionTitle title="Game Development" />
+                        <div className="w-full">
+                            <ProjectsGameDev />
+                        </div>
                     </div>
-                    <div className='mb-5 flex items-center justify-center'>
-                        <Link href='/otherProjects'>
-                            <button className="bg-[#b54ed7] hover:bg-blue-700 text-[#28283c] font-bold py-2 px-4 mt-4 rounded">
+
+                    <div className="mb-5 flex items-center justify-center w-full">
+                        <Link href="/otherProjects">
+                            <button className="bg-[#b54ed7] hover:bg-blue-700 text-[#28283c] font-bold py-2 px-4 mt-4 rounded w-full sm:w-auto">
                                 Other Projects
                             </button>
                         </Link>
