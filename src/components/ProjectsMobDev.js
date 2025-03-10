@@ -53,15 +53,11 @@ const ProjectsMobDev = () => {
                 youtubeLink="https://youtu.be/KYF2mFFrB5U"
                 downloadLink="https://drive.google.com/file/d/1GGNhb9jVgGuZ2CI3Fwe54V5Tce69D5_Y/view?usp=sharing"
             />
-            <ProjectCard 
+            {/* <ProjectCard 
                 logo={lockIcon}
                 name='Coming Soon'
                 techStacks={['React Native', 'MongoDB']}
-                // Uncomment and edit if you want to add description or links
-                // description='Embark on an exhilarating journey through City Adventures, the immersive 3D adventure game that blends excitement with real-world lessons in traffic safety and awareness...'
-                // websiteLink='https://drive.google.com/file/d/1QKxo_KJaKsSaSPsHWqdvsHZeSvHSRKSI/view?usp=sharing'
-                // carouselImages={[cityAdventuresPreview1, cityAdventuresPreview2]}
-            />
+            /> */}
         </div>
     )
 }

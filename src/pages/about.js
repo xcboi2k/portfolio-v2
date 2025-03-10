@@ -14,7 +14,7 @@ import profileImage from '../../public/images/profile_pic.jpg'
 const about = () => {
     const workHistory = [
         {
-            position: "Junior Mobile App Developer",
+            position: "Junior Mobile App Developer / Junior Web App Developer",
             company: "Vashcorp",
             date: "October 2023 - Present",
         },
@@ -49,13 +49,8 @@ const about = () => {
                         <div className="mb-6">
                             <SectionTitle title="Biography" />
                             <p className="text-[#f0f8ff] text-center text-sm sm:text-base">
-                                My name is Jose Alexei C. Garcia, I am a game developer and mobile app developer with expertise in Unity and JavaScript (React Native).
-                                With experience in the industry, I have honed my skills in game development and mobile app development.
-                                <br />
-                                Born with a passion for coding, I embarked on a journey in the world of software development 3 years ago.
-                                <br />
-                                From the very beginning, I was captivated by the ability to create innovative solutions and bring ideas to life through programming.
-                                <br />
+                                My name is Jose Alexei C. Garcia, I am currently a mobile app developer and web app developer with expertise in JavaScript (React and React Native).
+                                With experience in the industry, I have honed my skills in mobile application development and web application development.
                                 <br />
                                 As a lifelong learner, I am committed to staying at the forefront of technology and constantly upgrading my skills.
                                 <br />
@@ -88,7 +83,7 @@ const about = () => {
                                 />
                             </div>
                         </div>
-                        <div className="mb-6">
+                        {/* <div className="mb-6">
                             <SectionTitle title="Technical Skills" />
                             <div className="mb-2">
                                 <div className="mb-2">
@@ -107,7 +102,7 @@ const about = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="mb-6">
                             <SectionTitle title="Work Experience" />
                             <WorkExperience workHistory={workHistory} />

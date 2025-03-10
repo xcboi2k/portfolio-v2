@@ -24,12 +24,12 @@ const projects = () => {
                         </div>
                     </div>
                     
-                    <div className="mb-5 w-full">
+                    {/* <div className="mb-5 w-full">
                         <SectionTitle title="Game Development" />
                         <div className="w-full">
                             <ProjectsGameDev />
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="mb-5 flex items-center justify-center w-full">
                         <Link href="/otherProjects">

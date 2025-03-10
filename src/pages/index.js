@@ -12,7 +12,7 @@ export default function Home() {
               {/* Optional content for the first column if needed */}
           </div>
           <div className="w-full sm:w-1/2 px-4">
-              <AnimatedText text="Game Dev. Mobile Apps. Limitless Potential." />
+              <AnimatedText text="Mobile Apps. Web Apps. Limitless Potential." />
               <motion.div
                   className="px-4 sm:px-14"
                   initial={{ y: 20, opacity: 0 }}
@@ -20,7 +20,7 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
               >
                   <p className="inline-block w-full text-[#f0f8ff] font-light text-sm sm:text-base text-center sm:text-right">
-                      With unwavering dedication, I transform innovative ideas into captivating games and cutting-edge mobile applications.
+                      With unwavering dedication, I transform innovative ideas into <br />cutting-edge web and mobile applications.
                   </p>
               </motion.div>
               <div className="py-16 sm:py-24"></div>
