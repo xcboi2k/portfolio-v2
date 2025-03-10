@@ -20,7 +20,7 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
               >
                   <p className="inline-block w-full text-[#f0f8ff] font-light text-sm sm:text-base text-center sm:text-right">
-                      With unwavering dedication, I transform innovative ideas into <br />cutting-edge web and mobile applications.
+                      With unwavering dedication, I transform innovative ideas into cutting-edge web and mobile applications.
                   </p>
               </motion.div>
               <div className="py-16 sm:py-24"></div>
