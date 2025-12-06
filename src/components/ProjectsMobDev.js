@@ -53,11 +53,14 @@ const ProjectsMobDev = () => {
                 youtubeLink="https://youtu.be/KYF2mFFrB5U"
                 downloadLink="https://drive.google.com/file/d/1GGNhb9jVgGuZ2CI3Fwe54V5Tce69D5_Y/view?usp=sharing"
             />
-            {/* <ProjectCard 
-                logo={lockIcon}
-                name='Coming Soon'
-                techStacks={['React Native', 'MongoDB']}
-            /> */}
+            <ProjectCard 
+                logo={fitraIcon}
+                name='NipponAuto'
+                techStacks={['React Native', 'Expo']}
+                description='NipponAuto is an integrated automotive marketplace platform that streamlines vehicle trading and user interaction.'
+                // carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
+                youtubeLink="https://youtu.be/KYF2mFFrB5U"
+            />
         </div>
     )
 }

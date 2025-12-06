@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react'
+import { vashcorpWorkData } from '@/data/VashcorpWorkData'
 
 const WorkExperience = ({ workHistory }) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false)
 
     return (
         <div className="flex items-center justify-center mb-4 px-4 sm:px-6">
@@ -11,88 +12,121 @@ const WorkExperience = ({ workHistory }) => {
                     <li key={index} className="text-[#f0f8ff] relative">
                         <div className="flex justify-between items-start">
                             <div>
-                                <h4 className="font-bold underline-offset-2 decoration-[#D600FF] text-lg sm:text-xl">{item.position}</h4>
-                                <p className="text-sm sm:text-base">{item.company}</p>
-                                <p className="text-xs sm:text-sm text-[#f0f8ff]">{item.date}</p>
+                                <h4 className="font-bold underline-offset-2 decoration-[#D600FF] text-lg sm:text-xl">
+                                    {item.position}
+                                </h4>
+                                <p className="text-sm sm:text-base">
+                                    {item.company}
+                                </p>
+                                <p className="text-xs sm:text-sm text-[#f0f8ff]">
+                                    {item.date}
+                                </p>
                             </div>
                             {index === 0 && (
-                                <button 
+                                <button
                                     onClick={() => setIsOpen(!isOpen)}
-                                    className="text-[#f0f8ff] text-xl"
+                                    className="text-[#f0f8ff] text-md"
                                 >
-                                    {isOpen ? <ChevronUp /> : <ChevronDown />}
+                                    {isOpen ? 'See Less' : 'See More'}
                                 </button>
                             )}
                         </div>
                         {index === 0 && isOpen && (
-                            <div className="mt-[15px] mb-[15px] rounded-lg p-[20px] bg-[#f0f8ff]">
-                                <h4 className="font-bold text-dark text-lg sm:text-xl mb-[5px]">Experience</h4>
-                                <p className="text-sm sm:text-base text-dark">- Mobile Application Development</p>
-                                <div className="text-sm sm:text-base text-dark ml-[10px] mb-[10px]">
-                                    {[
-                                        "• I developed our mobile application called 4Gives in Android and IOS. Currently deployed in Google Play Store and App Store.",
-                                        "• I handled deployments in Google Play Store and App Store for our mobile application.",
-                                        "• I made the application previews for Google Play Store and App Store.",
-                                        "• I am the main QA Tester for our mobile application."
-                                    ].map((text, i) => (
-                                        <p key={i} className="mb-1">{text}</p>
-                                    ))}
-                                </div>
-
-                                <div className="w-full flex-col mb-[30px] ml-[10px]">
-                                    <p className="text-sm sm:text-base text-dark">Links:</p>
-                                    <p className="text-sm sm:text-base text-dark ml-[10px]">
-                                        • Google Play Store:{' '}
-                                        <a 
-                                            href="https://play.google.com/store/apps/details?id=com.vashcorp4Gives.me&pcampaignid=web_share" 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            className="text-blue-600 hover:text-blue-800 underline"
-                                        >
-                                            4Gives
-                                        </a>
-                                    </p>
-                                    <p className="text-sm sm:text-base text-dark ml-[10px]">
-                                        • App Store:{' '}
-                                        <a 
-                                            href="https://apps.apple.com/ph/app/4gives/id6475159043" 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            className="text-blue-600 hover:text-blue-800 underline"
-                                        >
-                                            4Gives
-                                        </a>
-                                    </p>
-                                </div>
-                                
-
-                                <p className="text-sm sm:text-base text-dark">- Web Application Development</p>
-                                <div className="text-sm sm:text-base text-dark ml-[10px] mb-[20px]">
-                                    {[
-                                        "• I developed some pages in the 4Gives web application.",
-                                        "• I handle the maintenance and further improvements of 4Gives and its Admin Dashboard.",
-                                        "• I developed our company website and stand-alone eKYC platform. (Both are not yet deployed publicly)",
-                                        "• I handled deployments of our web application in AWS and Vercel.",
-                                        "• I am the main QA Tester for our web applications."
-                                    ].map((text, i) => (
-                                        <p key={i} className="mb-1">{text}</p>
-                                    ))}
-                                </div>
-
-                                <div className="w-full flex-col mb-[30px] ml-[10px]">
+                            <>
+                                <div className="mt-[15px] mb-[15px] rounded-lg p-[20px] bg-[#f0f8ff]">
+                                    <h4 className="font-bold text-dark text-lg sm:text-xl mb-[5px]">
+                                        Positions:
+                                    </h4>
                                     <p className="text-sm sm:text-base text-dark">
-                                        • Link of 4Gives:{' '}
-                                        <a 
-                                            href="https://www.4gives.me" 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            className="text-blue-600 hover:text-blue-800 underline"
-                                        >
-                                            4Gives
-                                        </a>
+                                        - Frontend Developer (November 2024 -
+                                        Present)
+                                    </p>
+                                    <p className="text-sm sm:text-base text-dark">
+                                        - Mobile Application Developer (October
+                                        2023 - November 2024)
                                     </p>
                                 </div>
-                            </div>
+                                <div className="mb-[15px] rounded-lg p-[20px] bg-[#f0f8ff]">
+                                    <h4 className="font-bold text-dark text-lg sm:text-xl mb-[5px]">
+                                        Projects Developed:
+                                    </h4>
+                                    <div className="space-y-8">
+                                        {vashcorpWorkData?.map(
+                                            (project, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="text-dark"
+                                                >
+                                                    {/* Project Name */}
+                                                    <p className="text-lg font-semibold">
+                                                        {index + 1}.{' '}
+                                                        <span>
+                                                            {
+                                                                project.projectName
+                                                            }
+                                                        </span>
+                                                    </p>
+
+                                                    {/* Roles */}
+                                                    <div className="ml-5 mt-2 text-sm sm:text-base space-y-3">
+                                                        <p className="font-medium mb-1">
+                                                            Roles:
+                                                        </p>
+                                                        {project.projectRoles.map(
+                                                            (role, i) => (
+                                                                <div key={i}>
+                                                                    <p className="font-medium ml-4">
+                                                                        -{' '}
+                                                                        {
+                                                                            role.role
+                                                                        }
+                                                                    </p>
+                                                                    <p className="text-sm ml-8">
+                                                                        {
+                                                                            role.details
+                                                                        }
+                                                                    </p>
+                                                                </div>
+                                                            )
+                                                        )}
+                                                    </div>
+
+                                                    {/* Project Link (conditionally shown) */}
+                                                    {project.projectLinks && (
+                                                        <div className="ml-5 mt-2 text-sm sm:text-base space-y-1">
+                                                            <p className="font-medium mb-1">
+                                                                Links:
+                                                            </p>
+                                                            {project.projectLinks.map(
+                                                                (
+                                                                    link,
+                                                                    linkIndex
+                                                                ) => (
+                                                                    <a
+                                                                        key={
+                                                                            linkIndex
+                                                                        }
+                                                                        href={
+                                                                            link.linkUrl
+                                                                        }
+                                                                        target="_blank"
+                                                                        rel="noopener noreferrer"
+                                                                        className="text-blue-600 underline text-sm block ml-4"
+                                                                    >
+                                                                        {
+                                                                            link.linkName
+                                                                        }
+                                                                    </a>
+                                                                )
+                                                            )}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            )
+                                        )}
+                                    </div>
+                                </div>
+                            </>
                         )}
                     </li>
                 ))}
