@@ -11,13 +11,17 @@
   "dependencies": {
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "formik": "^2.4.9",
     "framer-motion": "^10.6.0",
     "lucide": "^0.468.0",
     "lucide-react": "^0.468.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "react-toastify": "^11.0.5",
+    "yup": "^1.7.1",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
