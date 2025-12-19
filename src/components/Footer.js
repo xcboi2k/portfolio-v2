@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 
 import AGLogo from '../../public/images/AG-Logo.png'
 import { LinkedInIcon, GithubIcon, ItchIoIcon } from './Icon'
-import { EMAIL_NEWSLETTER_API_URL } from '@/constants/api'
+import { CONTACT_US_FORM_API_URL } from '@/constants/api'
 import Loader from '@/components/Loader'
 import useLoaderStore from '@/stores/useLoaderStore'
 
@@ -20,21 +20,27 @@ export default function Footer() {
 
     const { showLoader, hideLoader } = useLoaderStore()
     const initialValues = {
-        email: '',
+        name: '',
+        message: '',
     }
 
     const handleSubmit = async (values, { resetForm }) => {
         showLoader()
         console.log('submitted data:', values)
 
-        const scriptURL = EMAIL_NEWSLETTER_API_URL
+        const scriptURL = CONTACT_US_FORM_API_URL
         try {
             const response = await fetch(scriptURL, {
                 method: 'POST',
                 body: JSON.stringify({
-                    email: values.email,
+                    name: values.name,
+                    message: values.message,
                     date: new Date().toLocaleDateString(),
                 }),
+                redirect: 'follow',
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8',
+                },
             })
 
             if (response.ok) {
