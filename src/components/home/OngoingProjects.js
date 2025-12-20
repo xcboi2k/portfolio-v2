@@ -23,12 +23,13 @@ export default function OngoingProjects() {
                 </motion.h1>
             </div>
             <div className="mb-5 w-full">
-                <div className="flex items-center mb-4">
-                    <div className="flex-grow rounded border-[1px] border-[#b54ed7]"></div>
-                    <h2 className="mx-4 text-xl sm:text-2xl font-bold text-[#101130]">
+                <div className="flex items-center mb-4 px-2 sm:px-0">
+                    <div className="block sm:hidden flex-grow rounded border-[1px] border-[#b54ed7] mr-2"></div>
+                    <div className="hidden sm:block flex-grow rounded border-[1px] border-[#b54ed7]"></div>
+                    <h2 className="mx-2 sm:mx-4 text-lg sm:text-xl md:text-2xl font-bold text-[#101130] text-center sm:text-center">
                         Mobile App Development
                     </h2>
-                    <div className="flex-grow rounded border-[1px] border-[#b54ed7]"></div>
+                    <div className="hidden sm:block flex-grow rounded border-[1px] border-[#b54ed7]"></div>
                 </div>
                 <div className="w-full bg-gray-50 py-10 px-4 mb-4">
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
@@ -74,12 +75,13 @@ export default function OngoingProjects() {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center mb-4">
-                    <div className="flex-grow rounded border-[1px] border-[#b54ed7]"></div>
-                    <h2 className="mx-4 text-xl sm:text-2xl font-bold text-[#101130]">
+                <div className="flex items-center mb-4 px-2 sm:px-0">
+                    <div className="block sm:hidden w-12 rounded border-[1px] border-[#b54ed7] mr-2"></div>
+                    <div className="hidden sm:block flex-grow rounded border-[1px] border-[#b54ed7]"></div>
+                    <h2 className="mx-2 sm:mx-4 text-lg sm:text-xl md:text-2xl font-bold text-[#101130] text-center sm:text-center">
                         Web App Development
                     </h2>
-                    <div className="flex-grow rounded border-[1px] border-[#b54ed7]"></div>
+                    <div className="hidden sm:block flex-grow rounded border-[1px] border-[#b54ed7]"></div>
                 </div>
                 <div className="w-full bg-gray-50 py-10 px-4 mb-4">
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">

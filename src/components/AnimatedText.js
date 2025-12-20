@@ -2,46 +2,44 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const quote = {
-    initial:{
-        opacity:0,
+    initial: {
+        opacity: 0,
     },
-    animate:{
-        opacity:1,
-        transition:{
-            delay: 0.5
-        }
-    }
+    animate: {
+        opacity: 1,
+        transition: {
+            delay: 0.5,
+        },
+    },
 }
 
 const singleWord = {
-    initial:{
-        opacity:0,
-        y:50
+    initial: {
+        opacity: 0,
+        y: 50,
     },
-    animate:{
-        opacity:1,
-        y:0,
-        transition:{
-            delay: 1
-        }
-    }
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 1,
+        },
+    },
 }
 
-const AnimatedText = ({text, className=''}) => {
+const AnimatedText = ({ text, className = '' }) => {
     return (
-        <div
-            className="w-full mx-auto py-2 px-4 sm:px-6 md:px-10 flex items-center justify-center text-center overflow-hidden"
-        >
+        <div className="w-full mx-auto py-2 px-4 sm:px-6 md:px-10 flex items-center justify-center text-center overflow-hidden">
             <motion.h1
                 className={`${className} inline-block w-full text-[#f0f8ff] font-bold capitalize text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
-                text-right text-shadow-lg`}
+                text-center sm:text-right text-shadow-lg`}
                 variants={quote}
                 initial="initial"
                 animate="animate"
             >
-                {text.split(" ").map((word, index) => (
+                {text.split(' ').map((word, index) => (
                     <motion.span
-                        key={word + "-" + index}
+                        key={word + '-' + index}
                         className="inline-block"
                         variants={singleWord}
                         initial="initial"
