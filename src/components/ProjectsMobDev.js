@@ -57,14 +57,33 @@ const ProjectsMobDev = () => {
                 youtubeLink="https://youtu.be/KYF2mFFrB5U"
                 downloadLink="https://drive.google.com/file/d/1GGNhb9jVgGuZ2CI3Fwe54V5Tce69D5_Y/view?usp=sharing"
             />
-            {/* <ProjectCard 
-                logo={fitraIcon}
-                name='NipponAuto'
+            <ProjectCard
+                logo={lockIcon}
+                name="NipponAuto"
                 techStacks={['React Native', 'Expo']}
-                description='NipponAuto is an integrated automotive marketplace platform that streamlines vehicle trading and user interaction.'
+                description="NipponAuto is a modern marketplace and social
+                                platform where users can buy, sell, and feature
+                                vehicles from various sellers, discover trending
+                                cars, and connect with fellow car enthusiasts."
                 // carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
-                youtubeLink="https://youtu.be/KYF2mFFrB5U"
-            /> */}
+                youtubeLink=""
+            />
+            <ProjectCard
+                logo={lockIcon}
+                name="TixGenie"
+                techStacks={['React Native', 'Expo']}
+                description="Converted a Figma wireframe into a fully responsive application UI, focusing on layout accuracy, component structure, and design consistency. This version does not include backend or API integration."
+                // carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
+                youtubeLink=""
+            />
+            <ProjectCard
+                logo={lockIcon}
+                name="FitBody"
+                techStacks={['React Native', 'Expo']}
+                description="Converted a Figma wireframe into a fully responsive application UI, focusing on layout accuracy, component structure, and design consistency. This version does not include backend or API integration."
+                // carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
+                youtubeLink=""
+            />
         </div>
     )
 }
