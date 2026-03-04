@@ -2,12 +2,30 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Settings } from 'lucide-react'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Carousel} from 'react-responsive-carousel';
+
 import SectionTitle from '../SectionTitle'
 
 // NipponAuto Mobile Preview Images
 import nipponAutoMobile1 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-1.png'
 import nipponAutoMobile2 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-2.png'
 import nipponAutoMobile3 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-3.png'
+
+// NipponAuto Web App Preview Images
+import nipponAutoWebApp1 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev1.PNG'
+import nipponAutoWebApp2 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev2.PNG'
+import nipponAutoWebApp3 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev3.PNG'
+import nipponAutoWebApp4 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev4.PNG'
+import nipponAutoWebApp5 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev5.PNG'
+
+const nipponAutoWebAppImages = [
+    nipponAutoWebApp1,
+    nipponAutoWebApp2,
+    nipponAutoWebApp3,
+    nipponAutoWebApp4,
+    nipponAutoWebApp5,
+]
 
 export default function OngoingProjects() {
     return (
@@ -98,16 +116,41 @@ export default function OngoingProjects() {
                             </p>
                         </div>
 
-                        {/* Building Section */}
+                        {/* Preview Section */}
                         <div className="md:w-1/2 w-full">
+                            <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gray-200 p-2">
+                                <Carousel
+                                    showStatus={false}
+                                    showThumbs={false}
+                                    infiniteLoop
+                                    autoPlay
+                                    interval={4000}
+                                    showArrows
+                                    className="h-full w-full"
+                                >
+                                    {nipponAutoWebAppImages.map((image, idx) => (
+                                        <div key={idx} className="h-64 md:h-80 relative">
+                                            <Image
+                                                src={image}
+                                                alt={`NipponAuto Web App Preview ${idx + 1}`}
+                                                priority={idx === 0}
+                                                className="object-contain h-full w-full"
+                                            />
+                                        </div>
+                                    ))}
+                                </Carousel>
+                            </div>
+                        </div>
+
+                        {/* Building Section */}
+                        {/* <div className="md:w-1/2 w-full">
                             <div className="relative w-full h-64 md:h-80 bg-gray-200 rounded-xl overflow-hidden flex flex-col items-center justify-center text-gray-500">
-                                {/* Cog Icon */}
                                 <Settings className="w-16 h-16 md:w-20 md:h-20 mb-4 animate-spin" />
                                 <p className="text-lg md:text-xl font-semibold">
                                     Currently Building
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
