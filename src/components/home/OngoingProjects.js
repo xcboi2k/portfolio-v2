@@ -13,11 +13,11 @@ import nipponAutoMobile2 from '../../../public/images/projects/nippon-auto/home-
 import nipponAutoMobile3 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-3.png'
 
 // NipponAuto Web App Preview Images
-import nipponAutoWebApp1 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev1.png'
-import nipponAutoWebApp2 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev2.png'
-import nipponAutoWebApp3 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev3.png'
-import nipponAutoWebApp4 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev4.png'
-import nipponAutoWebApp5 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev5.png'
+import nipponAutoWebApp1 from '../../../public/images/projects/nippon-auto/home-web-previews/landing-page.png'
+import nipponAutoWebApp2 from '../../../public/images/projects/nippon-auto/home-web-previews/marketplace-1.png'
+import nipponAutoWebApp3 from '../../../public/images/projects/nippon-auto/home-web-previews/community.png'
+import nipponAutoWebApp4 from '../../../public/images/projects/nippon-auto/home-web-previews/feed.png'
+import nipponAutoWebApp5 from '../../../public/images/projects/nippon-auto/home-web-previews/marketplace-2.png'
 
 const nipponAutoWebAppImages = [
     nipponAutoWebApp1,
@@ -118,7 +118,7 @@ export default function OngoingProjects() {
 
                         {/* Preview Section */}
                         <div className="md:w-1/2 w-full">
-                            <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gray-200 p-2">
+                            <div className="relative w-full h-88 rounded-xl overflow-hidden bg-gray-200 p-2">
                                 <Carousel
                                     showStatus={false}
                                     showThumbs={false}
@@ -132,13 +132,13 @@ export default function OngoingProjects() {
                                         (image, idx) => (
                                             <div
                                                 key={idx}
-                                                className="h-64 md:h-80 relative"
+                                                className="h-80 overflow-y-auto border rounded-lg"
                                             >
                                                 <Image
                                                     src={image}
                                                     alt={`NipponAuto Web App Preview ${idx + 1}`}
                                                     priority={idx === 0}
-                                                    className="object-contain h-full w-full"
+                                                    className="w-full h-auto"
                                                 />
                                             </div>
                                         )
