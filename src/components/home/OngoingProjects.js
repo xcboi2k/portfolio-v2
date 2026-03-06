@@ -2,8 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Settings } from 'lucide-react'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {Carousel} from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 
 import SectionTitle from '../SectionTitle'
 
@@ -13,11 +13,11 @@ import nipponAutoMobile2 from '../../../public/images/projects/nippon-auto/home-
 import nipponAutoMobile3 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-3.png'
 
 // NipponAuto Web App Preview Images
-import nipponAutoWebApp1 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev1.PNG'
-import nipponAutoWebApp2 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev2.PNG'
-import nipponAutoWebApp3 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev3.PNG'
-import nipponAutoWebApp4 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev4.PNG'
-import nipponAutoWebApp5 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev5.PNG'
+import nipponAutoWebApp1 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev1.png'
+import nipponAutoWebApp2 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev2.png'
+import nipponAutoWebApp3 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev3.png'
+import nipponAutoWebApp4 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev4.png'
+import nipponAutoWebApp5 from '../../../public/images/projects/nippon-auto/home-web-previews/NipponAuto-WebApp-Prev5.png'
 
 const nipponAutoWebAppImages = [
     nipponAutoWebApp1,
@@ -128,16 +128,21 @@ export default function OngoingProjects() {
                                     showArrows
                                     className="h-full w-full"
                                 >
-                                    {nipponAutoWebAppImages.map((image, idx) => (
-                                        <div key={idx} className="h-64 md:h-80 relative">
-                                            <Image
-                                                src={image}
-                                                alt={`NipponAuto Web App Preview ${idx + 1}`}
-                                                priority={idx === 0}
-                                                className="object-contain h-full w-full"
-                                            />
-                                        </div>
-                                    ))}
+                                    {nipponAutoWebAppImages.map(
+                                        (image, idx) => (
+                                            <div
+                                                key={idx}
+                                                className="h-64 md:h-80 relative"
+                                            >
+                                                <Image
+                                                    src={image}
+                                                    alt={`NipponAuto Web App Preview ${idx + 1}`}
+                                                    priority={idx === 0}
+                                                    className="object-contain h-full w-full"
+                                                />
+                                            </div>
+                                        )
+                                    )}
                                 </Carousel>
                             </div>
                         </div>
