@@ -3,7 +3,7 @@ import Image from 'next/image';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from 'react-responsive-carousel';
 
-const Modal = ({ closeModal, children, images }) => {
+const Modal = ({ closeModal, children, images, slides }) => {
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
             <div className="bg-white rounded-lg shadow-lg m-4 md:m-20 w-full md:w-3/4 lg:w-1/2 max-h-[80vh] overflow-y-auto">
@@ -13,23 +13,28 @@ const Modal = ({ closeModal, children, images }) => {
                         X
                     </button>
                 </div>
-                <div className='flex flex-col md:flex-row justify-center'>
+                <div className='flex flex-col md:flex-row justify-center pb-6'>
                     <div className='w-full md:w-1/2 mx-auto px-4'>
-                        {images && 
-                            <Carousel showStatus={false} className="h-32 w-full">
-                                {images.length !== 0 &&
-                                images.map((images, idx) => (
-                                    <div key={idx} className='border border-[#b54ed7]'>
-                                        <Image
-                                        src={images}
-                                        alt={`${idx}`}
-                                        priority={idx === 0}
-                                        className="object-cover h-full"
-                                        ></Image>
-                                    </div>
-                                ))}
+                        {(slides && slides.length > 0) || (images && images.length !== 0) ? (
+                            <Carousel showStatus={false} showThumbs={false} className="w-full">
+                                {slides && slides.length > 0
+                                    ? slides.map((slide, idx) => (
+                                        <div key={idx} className="w-full">
+                                            {slide}
+                                        </div>
+                                    ))
+                                    : images.map((img, idx) => (
+                                        <div key={idx} className='border border-[#b54ed7]'>
+                                            <Image
+                                                src={img}
+                                                alt={`Preview ${idx + 1}`}
+                                                priority={idx === 0}
+                                                className="object-cover h-full"
+                                            />
+                                        </div>
+                                    ))}
                             </Carousel>
-                        }
+                        ) : null}
                     </div>
                     <div className='w-full md:w-1/2 m-5 md:m-2'>
                         {children}

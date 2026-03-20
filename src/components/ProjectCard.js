@@ -12,6 +12,7 @@ const ProjectCard = ({
     downloadLink = '',
     youtubeLink = '',
     carouselImages,
+    carouselSlides,
 }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -55,7 +56,7 @@ const ProjectCard = ({
             </div>
 
             {isModalOpen && (
-                <Modal closeModal={closeModal} images={carouselImages}>
+                <Modal closeModal={closeModal} images={carouselImages} slides={carouselSlides}>
                     <div className="m-4">
                         <h2 className="text-2xl sm:text-3xl font-bold m-2 text-[#101130] text-center">
                             {name}
