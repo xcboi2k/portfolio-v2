@@ -3,6 +3,61 @@ import React, { useState } from 'react'
 import { LinkArrow, YoutubeIcon } from './Icon'
 import Modal from './Modal'
 
+/**
+ * Parses one line: *italic* → <em>. Unmatched * kept as text.
+ */
+function parseItalicsInLine(line, lineIndex) {
+    const nodes = []
+    let i = 0
+    let emKey = 0
+    while (i < line.length) {
+        const open = line.indexOf('*', i)
+        if (open === -1) {
+            nodes.push(line.slice(i))
+            break
+        }
+        if (open > i) {
+            nodes.push(line.slice(i, open))
+        }
+        const close = line.indexOf('*', open + 1)
+        if (close === -1) {
+            nodes.push(line.slice(open))
+            break
+        }
+        const inner = line.slice(open + 1, close)
+        nodes.push(
+            <em key={`desc-em-${lineIndex}-${emKey++}`} className="italic">
+                {inner}
+            </em>
+        )
+        i = close + 1
+    }
+    return nodes
+}
+
+/**
+ * Multi-line descriptions: real line breaks in the string become new lines.
+ * On each line, *text* becomes italic.
+ *
+ * Example (use a template literal so newlines are preserved):
+ *   {`Hello
+ *   *there*
+ *   *today*
+ *   Hello again`}
+ */
+function renderFormattedDescription(text) {
+    if (text == null || text === '') return null
+    const lines = text.split(/\r?\n/)
+    const out = []
+    lines.forEach((line, lineIndex) => {
+        if (lineIndex > 0) {
+            out.push(<br key={`desc-nl-${lineIndex}`} />)
+        }
+        out.push(...parseItalicsInLine(line, lineIndex))
+    })
+    return out
+}
+
 const ProjectCard = ({
     logo,
     name,
@@ -62,7 +117,7 @@ const ProjectCard = ({
                             {name}
                         </h2>
                         <p className="text-[#28283c] m-2 text-left text-sm sm:text-base">
-                            {description}
+                            {renderFormattedDescription(description)}
                         </p>
                         <div className="m-5 flex flex-col items-center sm:flex-row justify-center sm:justify-start">
                             {websiteLink ? (

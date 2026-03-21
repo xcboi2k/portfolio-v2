@@ -71,6 +71,50 @@ const ProjectsMobDev = () => {
     return (
         <div className="mb-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ProjectCard
+                logo={nipponAutoIcon}
+                name="NipponAuto"
+                techStacks={['React Native', 'Expo']}
+                description={`NipponAuto is a modern marketplace and social platform where users can buy, sell, and feature vehicles from various sellers, discover trending cars, and connect with fellow car enthusiasts.\n*This version does not include backend or API integration.*\n*Images displayed here are currently placeholders.*`}
+                // carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
+                youtubeLink=""
+            />
+            <ProjectCard
+                logo={fitBodyIcon}
+                name="FitBody"
+                techStacks={['React Native', 'Expo']}
+                description={`Converted a Figma wireframe into a fully responsive application UI, focusing on layout accuracy, component structure, and design consistency.\n*This version does not include backend or API integration.*\n*Images displayed here are currently placeholders.*`}
+                carouselSlides={createStripSlides(
+                    [
+                        fitBodyPreview1,
+                        fitBodyPreview2,
+                        fitBodyPreview3,
+                        fitBodyPreview4,
+                        fitBodyPreview5,
+                    ],
+                    2
+                )}
+                youtubeLink=""
+            />
+            <ProjectCard
+                logo={tixGenieIcon}
+                name="TixGenie"
+                techStacks={['React Native', 'Expo']}
+                description={`Converted a Figma wireframe into a fully responsive application UI, focusing on layout accuracy, component structure, and design consistency.\n*This version does not include backend or API integration.*\n*Images displayed here are currently placeholders.*`}
+                carouselSlides={createStripSlides(
+                    [
+                        tixGeniePreview1,
+                        tixGeniePreview2,
+                        tixGeniePreview3,
+                        tixGeniePreview4,
+                        tixGeniePreview5,
+                        tixGeniePreview6,
+                        tixGeniePreview7,
+                    ],
+                    2
+                )}
+                youtubeLink=""
+            />
+            <ProjectCard
                 logo={swccIcon}
                 name="Star Wars Collectibles Companion"
                 techStacks={['React Native', 'Expo', 'Firebase']}
@@ -104,47 +148,6 @@ const ProjectsMobDev = () => {
                 carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
                 youtubeLink="https://youtu.be/KYF2mFFrB5U"
                 downloadLink="https://drive.google.com/file/d/1GGNhb9jVgGuZ2CI3Fwe54V5Tce69D5_Y/view?usp=sharing"
-            />
-            <ProjectCard
-                logo={nipponAutoIcon}
-                name="NipponAuto"
-                techStacks={['React Native', 'Expo']}
-                description="NipponAuto is a modern marketplace and social
-                                platform where users can buy, sell, and feature
-                                vehicles from various sellers, discover trending
-                                cars, and connect with fellow car enthusiasts."
-                // carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
-                youtubeLink=""
-            />
-            <ProjectCard
-                logo={fitBodyIcon}
-                name="FitBody"
-                techStacks={['React Native', 'Expo']}
-                description="Converted a Figma wireframe into a fully responsive application UI, focusing on layout accuracy, component structure, and design consistency. This version does not include backend or API integration."
-                carouselSlides={createStripSlides(
-                    [fitBodyPreview1, fitBodyPreview2, fitBodyPreview3, fitBodyPreview4, fitBodyPreview5],
-                    2
-                )}
-                youtubeLink=""
-            />
-            <ProjectCard
-                logo={tixGenieIcon}
-                name="TixGenie"
-                techStacks={['React Native', 'Expo']}
-                description="Converted a Figma wireframe into a fully responsive application UI, focusing on layout accuracy, component structure, and design consistency. This version does not include backend or API integration."
-                carouselSlides={createStripSlides(
-                    [
-                        tixGeniePreview1,
-                        tixGeniePreview2,
-                        tixGeniePreview3,
-                        tixGeniePreview4,
-                        tixGeniePreview5,
-                        tixGeniePreview6,
-                        tixGeniePreview7,
-                    ],
-                    2
-                )}
-                youtubeLink=""
             />
         </div>
     )
