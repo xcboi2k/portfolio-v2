@@ -47,6 +47,96 @@ const WorkExperience = ({ workHistory }) => {
                                     </p>
                                 </div>
                                 <div className="mb-[15px] rounded-lg p-[20px] bg-[#f0f8ff]">
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>
+                                            Developed and deployed multiple web
+                                            and mobile applications across
+                                            various domains, including
+                                            <span className="font-semibold">
+                                                {' '}
+                                                4Gives, BetterCrew, Vashcorp
+                                                Website
+                                            </span>
+                                            , as well as internal projects like
+                                            a lending app and an early wage
+                                            access system for organizational use
+                                        </li>
+                                        <li>
+                                            Built cross-platform mobile
+                                            applications (Android & iOS) using{' '}
+                                            <span className="font-semibold">
+                                                React Native
+                                            </span>
+                                            , ensuring consistent performance
+                                            and user experience across devices
+                                        </li>
+                                        <li>
+                                            Designed and implemented scalable,
+                                            reusable UI components for web
+                                            applications using{' '}
+                                            <span className="font-semibold">
+                                                React
+                                            </span>{' '}
+                                            and modern frontend technologies
+                                        </li>
+                                        <li>
+                                            Translated{' '}
+                                            <span className="font-semibold">
+                                                Figma
+                                            </span>{' '}
+                                            designs into responsive,
+                                            production-ready interfaces with
+                                            strong attention to UX and
+                                            performance
+                                        </li>
+                                        <li>
+                                            Owned and managed the full
+                                            deployment lifecycle, including:
+                                            <ul className="list-disc list-inside ml-5 space-y-1">
+                                                <li>
+                                                    Publishing mobile apps to
+                                                    Google Play Store and Apple
+                                                    App Store
+                                                </li>
+                                                <li>
+                                                    Deploying web applications
+                                                    via AWS and Vercel
+                                                </li>
+                                                <li>
+                                                    Monitoring builds, releases,
+                                                    and production issues
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Led ongoing maintenance across web
+                                            and mobile platforms, delivering
+                                            regular updates, bug fixes, and
+                                            performance optimizations to ensure
+                                            application stability
+                                        </li>
+                                        <li>
+                                            Conducted comprehensive QA testing
+                                            cycles before each release,
+                                            identifying and resolving UI/UX and
+                                            functional issues to maintain
+                                            high-quality standards
+                                        </li>
+                                        <li>
+                                            Created app store assets and preview
+                                            media, contributing to improved
+                                            presentation and user acquisition
+                                        </li>
+                                        <li>
+                                            Collaborated with cross-functional
+                                            teams including designers and
+                                            backend developers to deliver
+                                            features efficiently in a fast-paced
+                                            environment
+                                        </li>
+                                    </ul>
+                                </div>
+                                {/* <div className="mb-[15px] rounded-lg p-[20px] bg-[#f0f8ff]">
                                     <h4 className="font-bold text-dark text-lg sm:text-xl mb-[5px]">
                                         Projects Developed:
                                     </h4>
@@ -57,7 +147,6 @@ const WorkExperience = ({ workHistory }) => {
                                                     key={index}
                                                     className="text-dark"
                                                 >
-                                                    {/* Project Name */}
                                                     <p className="text-lg font-semibold">
                                                         {index + 1}.{' '}
                                                         <span>
@@ -66,8 +155,6 @@ const WorkExperience = ({ workHistory }) => {
                                                             }
                                                         </span>
                                                     </p>
-
-                                                    {/* Roles */}
                                                     <div className="ml-5 mt-2 text-sm sm:text-base space-y-3">
                                                         <p className="font-medium mb-1">
                                                             Roles:
@@ -90,8 +177,6 @@ const WorkExperience = ({ workHistory }) => {
                                                             )
                                                         )}
                                                     </div>
-
-                                                    {/* Project Link (conditionally shown) */}
                                                     {project.projectLinks && (
                                                         <div className="ml-5 mt-2 text-sm sm:text-base space-y-1">
                                                             <p className="font-medium mb-1">
@@ -125,7 +210,7 @@ const WorkExperience = ({ workHistory }) => {
                                             )
                                         )}
                                     </div>
-                                </div>
+                                </div> */}
                             </>
                         )}
                     </li>
