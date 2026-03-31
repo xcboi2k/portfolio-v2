@@ -21,6 +21,12 @@ import swccPreview2 from '../../public/images/projects/swcc/preview2.png'
 import swccPreview3 from '../../public/images/projects/swcc/preview3.png'
 
 import nipponAutoIcon from '../../public/images/projects/nippon-auto/nippon-auto-icon.png'
+import nipponAutoMobile1 from '../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-1.png'
+import nipponAutoMobile2 from '../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-2.png'
+import nipponAutoMobile3 from '../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-3.png'
+import nipponAutoMobile4 from '../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-4.png'
+import nipponAutoMobile5 from '../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-5.png'
+import nipponAutoMobile6 from '../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-6.png'
 
 import fitBodyIcon from '../../public/images/projects/fitbody/fitbody-icon.png'
 import fitBodyPreview1 from '../../public/images/projects/fitbody/fitbody-1.png'
@@ -75,7 +81,17 @@ const ProjectsMobDev = () => {
                 name="NipponAuto"
                 techStacks={['React Native', 'Expo']}
                 description={`NipponAuto is a modern marketplace and social platform where users can buy, sell, and feature vehicles from various sellers, discover trending cars, and connect with fellow car enthusiasts.\n*This version does not include backend or API integration.*\n*Images displayed here are currently placeholders.*`}
-                // carouselImages={[fitraPreview1, fitraPreview2, fitraPreview3]}
+                carouselImages={createStripSlides(
+                    [
+                        nipponAutoMobile1,
+                        nipponAutoMobile2,
+                        nipponAutoMobile3,
+                        nipponAutoMobile4,
+                        nipponAutoMobile5,
+                        nipponAutoMobile6,
+                    ],
+                    2
+                )}
                 youtubeLink=""
             />
             <ProjectCard

@@ -11,6 +11,9 @@ import SectionTitle from '../SectionTitle'
 import nipponAutoMobile1 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-1.png'
 import nipponAutoMobile2 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-2.png'
 import nipponAutoMobile3 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-3.png'
+import nipponAutoMobile4 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-4.png'
+import nipponAutoMobile5 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-5.png'
+import nipponAutoMobile6 from '../../../public/images/projects/nippon-auto/home-mobile-previews/NipponAuto-Mobile-6.png'
 
 // NipponAuto Web App Preview Images
 import nipponAutoWebApp1 from '../../../public/images/projects/nippon-auto/home-web-previews/landing-page.png'
@@ -66,7 +69,7 @@ export default function OngoingProjects() {
 
                         {/* Preview Section */}
                         <div className="md:w-1/2 w-full">
-                            <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gray-200 flex gap-2 p-2">
+                            <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gray-200 flex gap-2 p-2 mb-6">
                                 <div className="flex-1 h-full">
                                     <Image
                                         src={nipponAutoMobile1}
@@ -86,6 +89,30 @@ export default function OngoingProjects() {
                                     <Image
                                         src={nipponAutoMobile3}
                                         alt="NipponAuto Mobile Preview 3"
+                                        className="object-contain h-full w-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gray-200 flex gap-2 p-2 mb-6">
+                                <div className="flex-1 h-full">
+                                    <Image
+                                        src={nipponAutoMobile4}
+                                        alt="NipponAuto Mobile Preview 4"
+                                        className="object-contain h-full w-full"
+                                        priority
+                                    />
+                                </div>
+                                <div className="flex-1 h-full">
+                                    <Image
+                                        src={nipponAutoMobile5}
+                                        alt="NipponAuto Mobile Preview 5"
+                                        className="object-contain h-full w-full"
+                                    />
+                                </div>
+                                <div className="flex-1 h-full">
+                                    <Image
+                                        src={nipponAutoMobile6}
+                                        alt="NipponAuto Mobile Preview 6"
                                         className="object-contain h-full w-full"
                                     />
                                 </div>
