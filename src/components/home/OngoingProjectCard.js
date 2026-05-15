@@ -42,6 +42,8 @@ export default function OngoingProjectCard({
                                                             src={image}
                                                             alt={`Mobile Preview ${imageIdx + 1}`}
                                                             className="object-contain h-full w-full"
+                                                            width={200}
+                                                            height={200}
                                                         />
                                                     </div>
                                                 )
